@@ -5,7 +5,9 @@
 }
 body {
   background-color: #c7ffd8;
-   
+  border: 1px solid red;
+  min-height: 100vh;
+  position: relative;
 }
 .nav-bar {
   display: flex;
@@ -67,6 +69,22 @@ body {
   font-weight: bold;
   font-family: sans-serif;
 }
+.about {
+  /* border: 1px solid red; */
+
+  text-align: center;
+  height: max-content;
+}
+.about h1 {
+  padding: 5px;
+  font-family: sans-serif;
+}
+.about p {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+  font-size: 1.3rem;
+}
 footer {
   border: 1px solid #007965;
   background-color: #80ffdb;
@@ -89,9 +107,12 @@ footer a {
   padding: 5px;
 }
 @media only screen and (max-width: 768px) {
-    .container{
-        width: 80%;
-    }
+  .container {
+    width: 80%;
+  }
+  footer {
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -106,5 +127,15 @@ footer a {
   }
   .output p {
     font-size: 1.3rem;
+  }
+  .about p {
+    width: 100%;
+    text-align: justify;
+    padding: 0 0.5rem;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  footer {
+    position: relative;
   }
 }
