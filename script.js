@@ -12,7 +12,7 @@ const translateText = async (text) => {
     const translatedText = data.contents.translated;
     outputText.innerHTML = `<p>${translatedText}</p>`;
   } catch (error) {
-    return null;
+    alert("something went wrong, please try again after some time ");
   }
 };
 
